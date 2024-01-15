@@ -1,31 +1,76 @@
 body{
     background-color: #c0a5dd96;
-    max-width: 1500px;
+    max-width: 1600px;
     overflow-x: hidden;
+}
+
+.nav_bar {
+    background-color: #c0a5dd96;
+    margin: 0px;
+}
+
+.nav_bar img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.nav_bar .navbar-brand {
+    margin-right: 20px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search_input {
+    padding-left: 50px;
+    border-radius: 10px;
+    margin-right: 10px; 
 }
 
 .search_icon {
     position: absolute;
-    right: 660px; 
+    right: 300px; 
     top: 50%;
     transform: translateY(-50%);
+    color: #212529;
 }
 
-.search_input{
-    padding-left: 50px;
-    border-radius: 10px;
+.search_button {
+    color: #212529;
+    border-color: #212529;
 }
 
-.cart_icon {
-    position: absolute;
-    right: 200px;  
-    top: 50%;
-    transform: translateY(-49%);
+.Login_button{
+    color: #212529;
+    border-color: #212529;
+}
+.cart_icon{
+    position: relative;
+    top: 7px;
+    transform: translateY(-50%);
+    color: #212529;
+    right: 50px;
+}
+.notification_icon {
+    position: relative; 
+    top: 7px;
+    transform: translateY(-50%);
+    color: #212529;
+    right: 30px;
 }
 
-.nav_bar{
-    background-color: #c0a5dd96;
+
+.cart_icon:hover {
+    color: #218838;
 }
+
+.notification_icon:hover {
+    color: #c82333;
+}
+
 
 .img{
     border-radius: 30px;
@@ -40,6 +85,7 @@ body{
     padding: 15px;
     width: max-content;
     margin-left: 100px;
+    left: 300px;
 }
 
 .button:hover{
@@ -71,23 +117,14 @@ body{
     font-size: xx-large;
 }
 
-/* Style for the countdown result */
-#countdown {
-    font-size: 24px;
-    color: #333;
-}
-
-/* Style for the "EXPIRED" message */
-#expired-message {
-    font-size: 24px;
-    color: red;
-}
-
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #9b7bc1;
+    color: #212529;
     padding: 20px;
     text-align: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
 }
 
 .footer-links {
@@ -95,14 +132,16 @@ footer {
     padding: 0;
     display: flex;
     justify-content: center;
+   
 }
 
 .footer-links li {
     margin: 0 15px;
+
 }
 
 .footer-links a {
-    color: #fff;
+    color: #212529;
     text-decoration: none;
 }
 
@@ -114,11 +153,11 @@ footer {
 
 .footer-social-icons a {
     margin: 0 10px;
-    color: #fff;
+    color: #212529;
     text-decoration: none;
 }
 
-/* Responsive styles */
+
 @media only screen and (max-width: 768px) {
     .footer-links, .footer-social-icons {
         flex-direction: column;
