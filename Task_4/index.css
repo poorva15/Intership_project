@@ -1,0 +1,90 @@
+body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0c111b;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.logo img {
+    max-height: 50px;
+    border-radius: 30px;
+}
+
+.nav-links {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+ .nav-items a {
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+ }
+
+ .right-container {
+    display: block;
+    margin-left: auto;
+ }
+
+ .search-box {
+    border: 1px solid #aaa;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+    padding-left: 10px;
+ }
+
+ .search-box:focus {
+    border-color: #1f80e0;
+ }
+
+ .sub-btn {
+    background-color: #1f80e0;
+    height: 30px;
+    padding: 10 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+ }
+
+ .login-link {
+    color: #fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+ }
+
+ #welcomeMessage {
+    font-size: 17px;
+    color: white;
+    right: 167px;
+    position: relative;
+    top: -40px ;
+    text-transform: capitalize;
+} 

@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0c111b;
+    background-image: url('images/backgroung.jpg');
+}
+
+.head{
+    text-align: center;
+}
+
+.logo img {
+    max-height: 67px;
+    border-radius: 30px;
+    margin-left: 41px;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.container {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    opacity: .7;
+    color: white;
+    width: 300px;
+    height: 450px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0d0c0c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #090808;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs button {
+    margin: 0;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    border: none;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.signup{
+    color: #11b635;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+}
