@@ -7,8 +7,8 @@ function redirectToSignup() {
     window.location.href = 'signup.html';
 }
 
-// Authentication logic for login page
-function submitLogin() {
+    function submitLogin() {
+    console.log('submitLogin function is executing');
     const username = document.getElementById('loginUsername').value;
     const password = document.getElementById('loginPassword').value;
 
@@ -74,24 +74,6 @@ function submitSignup() {
     alert('Sign Up successful! You can now login.');
     window.location.href = `index.html?username=${encodeURIComponent(newUsername)}`;
 }
-
-const videoCards = document.querySelectorAll('.video-card');
-
-videoCards.forEach(item => {
-    item.addEventListener('mouseover', () => {
-        let video = item.children[1];
-        video.play().catch(error => {
-            // Autoplay was prevented. Handle the error, e.g., by showing a play button.
-            console.error("Autoplay prevented: ", error);
-        });
-    });
-
-    item.addEventListener('mouseleave', () => {
-        let video = item.children[1];
-        video.pause();
-    });
-});
-
 
 // cards sliders
 
